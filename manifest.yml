@@ -1,0 +1,17 @@
+---
+applications:
+  .:
+    name: tweixin
+    framework:
+      name: node
+      info:
+        mem: 64M
+        description: Node.js Application
+        exec: 
+    infra: ap-aws
+    url: tweixin.ap01.aws.af.cm
+    mem: 64M
+    instances: 1
+    services:
+      redis-a7758:
+        type: redis
